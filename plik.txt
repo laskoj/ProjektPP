@@ -3,3 +3,8 @@ plugin -> SimpleSqliteBrowser
 
 
 sqlite-jdbc plik *.jar
+
+
+https://github.com/laskoj/ProjektPP
+
+
