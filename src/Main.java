@@ -1,10 +1,10 @@
 import java.sql.*;
 import java.util.*;
 
-// Main class to run the program
+// Main class do uruchomienia programu
 public class Main {
     public static void main(String[] args) {
-        // Start the GUI application
+        // Start the GUI APP
         javax.swing.SwingUtilities.invokeLater(() -> {
             StudentManagementGUI gui = new StudentManagementGUI();
             gui.createAndShowGUI();
@@ -19,7 +19,7 @@ class Student {
     private double grade;
     private String studentID;
 
-    // Constructor
+    // Konstruktor
     public Student(String name, int age, double grade, String studentID) {
         this.name = name;
         this.age = age;
@@ -60,7 +60,7 @@ class Student {
         this.studentID = studentID;
     }
 
-    // Method to display student information
+    // Method: wyświetlanie informacji o studencie
     public void displayInfo() {
         System.out.println("Student ID: " + studentID);
         System.out.println("Name: " + name);
@@ -69,7 +69,7 @@ class Student {
     }
 }
 
-// Interface for StudentManager
+// Interface dla StudentManager
 interface StudentManager {
     void addStudent(Student student);
     void removeStudent(String studentID);
@@ -78,7 +78,7 @@ interface StudentManager {
     double calculateAverageGrade();
 }
 
-// Implementation of StudentManager interface
+// Implementacja dla interfejsu StudentManager
 class StudentManagerImpl implements StudentManager {
     private static final String DB_URL = "jdbc:sqlite:students.db";
 
@@ -190,7 +190,7 @@ class StudentManagementGUI {
         frame.setSize(600, 400);
         frame.setLayout(new java.awt.BorderLayout());
 
-        // Add components (panels, buttons, etc.)
+        // Dodanie komponentów (panel, button)
         javax.swing.JPanel inputPanel = new javax.swing.JPanel(new java.awt.GridLayout(5, 2));
         inputPanel.add(new javax.swing.JLabel("Student ID:"));
         javax.swing.JTextField idField = new javax.swing.JTextField();
@@ -216,7 +216,7 @@ class StudentManagementGUI {
         frame.add(inputPanel, java.awt.BorderLayout.NORTH);
         frame.add(new javax.swing.JScrollPane(outputArea), java.awt.BorderLayout.CENTER);
 
-        // Add action listeners
+        // Dodanie akcji listeners
         addButton.addActionListener(e -> {
             try {
                 String id = idField.getText();
