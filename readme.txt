@@ -15,3 +15,4 @@ Od teraz możemy uruchomic naszą baze poprzez dwuklik z listy plików (students
 W tym oknie możemy odświeżyć nasza baze i zweryfikować obecność wyżej podanego studenta. 
 
 Dodatkowo możemy zainstalować program DB Browser (SQLite) i również tam prowadzić naszą baze danych.
+
