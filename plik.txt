@@ -8,3 +8,4 @@ sqlite-jdbc plik *.jar
 https://github.com/laskoj/ProjektPP
 
 
+DB Browser (SQLite)
