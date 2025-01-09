@@ -234,4 +234,3 @@ class StudentManagementGUI {
         frame.setVisible(true);
     }
 }
-
