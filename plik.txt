@@ -1,0 +1,5 @@
+ctrl alt s
+plugin -> SimpleSqliteBrowser
+
+
+sqlite-jdbc plik *.jar
